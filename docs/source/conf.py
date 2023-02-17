@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Otter'
+copyright = '2023, LGPL-3.0, GPL-3.0 licenses'
+author = 'Bloxster'
 
 release = '0.1'
 version = '0.1.0'
