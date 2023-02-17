@@ -1,10 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to OtterClient's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Otter** is an implementation of Ethereum (execution client), on the efficiency frontier. Archive Node by default.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -20,3 +17,11 @@ Contents
 
    usage
    api
+   getting_started
+   fundamentals
+   Interacting_with_otter
+   developers
+   monitoring
+   tools
+   faq
+   resources
