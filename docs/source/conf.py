@@ -33,3 +33,13 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# Install
+pip install sphinx-copybutton
+# Declare it in the conf.py
+extensions = [
+    ...
+    'sphinx_copybutton'
+    ...
+]
+
