@@ -1,16 +1,16 @@
 Usage
 =====
 
-### Getting Started
+Getting Started
+----------------
 
 For building the latest stable release (this will be suitable for most users just wanting to run a node):
 
-```sh
+.. code-block:: console
 git clone --branch stable --single-branch https://github.com/ledgerwatch/erigon.git
 cd erigon
 make erigon
 ./build/bin/erigon
-```
 
 You can check [the list of releases](https://github.com/ledgerwatch/erigon/releases) for release notes.
 
