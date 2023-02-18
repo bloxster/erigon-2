@@ -16,7 +16,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
+    'sphinx.ext.intersphinx'
+    'sphinx_copybutton',
 ]
 
 intersphinx_mapping = {
@@ -34,12 +35,5 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-# Install
-pip install sphinx-copybutton
-# Declare it in the conf.py
-extensions = [
-    ...
-    'sphinx_copybutton'
-    ...
-]
+
 
