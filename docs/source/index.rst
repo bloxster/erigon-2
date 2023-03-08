@@ -15,11 +15,9 @@ Contents
 
 .. toctree::
 
-   usage
-   api
    getting_started
    fundamentals
-   Interacting_with_otter
+   interacting_with_erigon
    developers
    monitoring
    tools
