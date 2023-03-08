@@ -1,7 +1,7 @@
-Welcome to OtterClient's documentation!
+Welcome to Erigon documentation!
 ===================================
 
-**Otter** is an implementation of Ethereum (execution client), on the efficiency frontier. Archive Node by default.
+**Erigon** is an implementation of Ethereum (execution client), on the efficiency frontier. Archive Node by default.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
