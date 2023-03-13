@@ -10,7 +10,7 @@ To use Erigon as a monolithic service simply launch
 
 ``./build/bin/erigon``
 
-Default ``--snapshots`` for ``mainnet``, ``goerli``, ``gnosis`, ``bsc``. Other networks now have default ``--snapshots=false``. Increase
+Default ``--snapshots`` for ``mainnet``, ``goerli``, ``gnosis``, ``bsc``. Other networks now have default ``--snapshots=false``. Increase
 download speed by flag ``--torrent.download.rate=20mb``. <code>🔬 See [Downloader docs](./cmd/downloader/readme.md)</code>
 
 Use ``--datadir`` to choose where to store data.
