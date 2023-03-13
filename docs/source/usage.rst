@@ -8,7 +8,7 @@ How to start Erigon's services as separated processes, see in docker-compose.yml
 Monolithic Client
 ------------------
 
-To use Erigon as a monolithic service simply launch:
+To use Erigon as a full single service launch:
 
 ``./build/bin/erigon``
 
@@ -21,3 +21,4 @@ Use ``--chain=gnosis`` for `Gnosis Chain <https://www.gnosis.io/>`_, ``--chain=b
 For Gnosis Chain you need a Consensus Layer client alongside Erigon (see `here <https://docs.gnosischain.com/node/guide/beacon>`_).
 
 Running ``make help`` will list and describe the convenience commands available in the [Makefile](./Makefile).
+
