@@ -1,7 +1,9 @@
 Usage
 =====
 
-Erigon is a full modular client which allows its use from a service with all the options included to a setup of services splitted among different processes, machines or remote servers according to user preferences.
+Erigon is by default an "all in one binary" solution, but it's possible start any internal component as a separated processes: TxPool, JSON RPC layer (RPCDaemon), p2p layer (Sentry), history download layer (Downloader), consensus. Don't start services as separated processes unless you have clear reason for it: resource limiting, scale, replace by your own implementation, security. 
+
+How to start Erigon's services as separated processes, see in docker-compose.yml.
 
 Monolithic Client
 ------------------
