@@ -15,7 +15,7 @@ download speed by flag ``--torrent.download.rate=20mb``. <code>🔬 See [Downloa
 
 Use ``--datadir`` to choose where to store data.
 
-Use ``--chain=gnosis`` for `Gnosis Chain<https://www.gnosis.io/>`_, ``--chain=bor-mainnet`` for Polygon Mainnet, and ``--chain=mumbai`` for Polygon Mumbai.
+Use ``--chain=gnosis`` for `Gnosis Chain <https://www.gnosis.io/>`_, ``--chain=bor-mainnet`` for Polygon Mainnet, and ``--chain=mumbai`` for Polygon Mumbai.
 For Gnosis Chain you need a Consensus Layer client alongside Erigon <https://docs.gnosischain.com/node/guide/beacon>.
 
 Running ``make help`` will list and describe the convenience commands available in the [Makefile](./Makefile).
