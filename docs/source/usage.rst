@@ -1,7 +1,7 @@
 Usage
 =====
 
-Erigon is by default an "all in one binary" solution, but it's possible start any internal component as a separated processes: TxPool, JSON RPC layer (RPCDaemon), p2p layer (Sentry), history download layer (Downloader), consensus. Don't start services as separated processes unless you have clear reason for it: resource limiting, scale, replace by your own implementation, security. 
+Erigon is by default an "all in one binary" solution, but it's possible start any internal component as a separated processes: TxPool, JSON RPC layer (RPCDaemon), p2p layer (Sentry), history download layer (Downloader), consensus layer. Don't start services as separated processes unless you have clear reason for it: resource limiting, scale, replace by your own implementation, security. 
 
 How to start Erigon's services as separated processes, see in docker-compose.yml.
 
