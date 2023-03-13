@@ -8,7 +8,7 @@ How to start Erigon's services as separated processes, see in docker-compose.yml
 Monolithic Client
 ------------------
 
-To use Erigon as a monolithic service simply launch
+To use Erigon as a monolithic service simply launch:
 
 ``./build/bin/erigon``
 
