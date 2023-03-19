@@ -1,24 +1,30 @@
 Usage
 =====
 
-Erigon is by default an "all in one binary" solution, but it's possible start any internal component as a separated processes: TxPool, JSON RPC layer (RPCDaemon), p2p layer (Sentry), history download layer (Downloader), consensus layer. Don't start services as separated processes unless you have clear reason for it: resource limiting, scale, replace by your own implementation, security. 
+Erigon is by default an "all in one binary" solution, but it's possible start any internal component as a separated processes: TxPool, JSON RPC layer (RPCDaemon), p2p layer (Sentry), history download layer (Downloader), consensus layer.
+
+Don't start services as separated processes unless you have clear reason for it: resource limiting, scale, replace by your own implementation, security. 
 
 How to start Erigon's services as separated processes, see in docker-compose.yml.
 
-Monolithic Client
+One-in-all Client
 ------------------
 
 To use Erigon as a full single service launch:
 
-``./build/bin/erigon``
+```
+./build/bin/erigon
+```
 
 Default ``--snapshots`` for ``mainnet``, ``goerli``, ``gnosis``, ``bsc``. Other networks now have default ``--snapshots=false``. Increase
-download speed by flag ``--torrent.download.rate=20mb``. <code>🔬 See [Downloader docs](./cmd/downloader/readme.md)</code>
+download speed by flag ``--torrent.download.rate=20mb``.
+
+*🔬 See [Downloader docs](./cmd/downloader/readme.md)*
 
 Use ``--datadir`` to choose where to store data.
 
-Use ``--chain=gnosis`` for `Gnosis Chain <https://www.gnosis.io/>`_, ``--chain=bor-mainnet`` for Polygon Mainnet, and ``--chain=mumbai`` for Polygon Mumbai.
-For Gnosis Chain you need a Consensus Layer client alongside Erigon (see `here <https://docs.gnosischain.com/node/guide/beacon>`_).
+Use ``--chain=gnosis`` for [Gnosis Chain](https://www.gnosis.io), ``--chain=bor-mainnet`` for Polygon Mainnet, and ``--chain=mumbai`` for Polygon Mumbai.
+For Gnosis Chain you need a Consensus Layer client alongside Erigon (see [here](https://docs.gnosischain.com/node/guide/beacon)).
 
-Running ``make help`` will list and describe the convenience commands available in the [Makefile](./Makefile).
+Running ``make help`` will list and describe the convenience commands available in the ``Makefile``.
 
