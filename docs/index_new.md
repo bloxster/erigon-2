@@ -1,7 +1,9 @@
 Welcome to Erigon documentation!
 ===================================
 
-Erigon is an implementation of Ethereum (execution client), on the efficiency frontier. Archive Node by default.
+Erigon is an implementation of Ethereum on the efficiency frontier.
+
+Archive Node by default.
 
 Check out the :doc:`usage` section for further information, including the :ref:`installation` the project.
 
