@@ -18,7 +18,6 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Erigon"
 copyright = "2023, Erigon"
 author = "Erigon"
 
@@ -87,7 +86,7 @@ html_theme = "sphinx_book_theme"
 # documentation.
 #
 html_theme_options = {
-    "repository_url": "https://github.com/otter/docs/Erigon_400x400.png",
+    "repository_url": "https://github.com/otter/docs/Erigon_400x400.jpeg",
     "use_repository_button": True,
 }
 
