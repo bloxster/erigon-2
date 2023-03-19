@@ -87,7 +87,7 @@ html_theme = "sphinx_book_theme"
 #
 html_theme_options = {
     "repository_url": "https://github.com/bloxster/otter",
-    "html_logo": "https://github.com/otter/docs/Erigon_400x400.jpeg"
+    "html_logo": "https://github.com/otter/docs/Erigon_400x400.jpeg",
     "use_repository_button": True,
 }
 
