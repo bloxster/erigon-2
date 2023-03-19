@@ -25,7 +25,7 @@ On Linux: kernel > v4
 
 [Golang](https://go.dev/doc/install) version ≥ 1.18; [GCC](https://go.dev/doc/install/gccgo) 10+ or [Clang](https://clang.llvm.org).
 
-## Installing Erigon
+## Installing Erigon
 
 For building the latest stable release (this will be suitable for most users just wanting to run a node):
 
