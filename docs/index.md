@@ -19,6 +19,8 @@ Erigon is an implementation of Ethereum (execution client), on the efficiency fr
 
 [Twitter](https://twitter.com/ErigonEth)
 
+## Index
+
 ```{toctree}
 :maxdepth: 2
 getting_started
@@ -32,5 +34,4 @@ faq
 use
 contribute/index
 reference/example
-changelog
 ```
