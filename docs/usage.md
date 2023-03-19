@@ -12,7 +12,7 @@ One-in-all Client
 
 To use Erigon as a full single service launch:
 
-```
+```bash
 ./build/bin/erigon
 ```
 
