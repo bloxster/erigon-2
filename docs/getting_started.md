@@ -5,7 +5,7 @@ In order to use Erigon, the software must first be installed. There are several 
 
 ## System Requirements
 
-For an Archive node of Ethereum Mainnet it is recommended ≥ 3TB storage space: 1.8TB state (as of March 2022), 200GB temp files (can symlink or mount folder <datadir>/temp to another disk).
+For an Archive node of Ethereum Mainnet it is recommended ≥ 3TB of storage space: 1.8TB state (as of March 2022), 200GB temp files (can symlink or mount folder <datadir>/temp to another disk).
 
 - Ethereum Mainnet Full node ( see --prune* flags): 400Gb (April 2022).
 - Goerli Full node (see --prune* flags): 189GB on Beta, 114GB on Alpha (April 2022).
