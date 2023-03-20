@@ -1,23 +1,39 @@
-# Fundamentals
+# Erigon Fundamentals
 
-Erigon is an implementation of Ethereum (execution client with light client for consensus layer), on the efficiency frontier with high modularity. Archive Node by default.
+## Introduction
 
-# System Requirements
+This section includes documentation for foundational topics in Erigon. The pages here will help you to understand how Erigon works from a user perspective and under the hood.
 
-For an Archive node of Ethereum Mainnet we recommend >=3TB storage space: 1.8TB state (as of March 2022), 200GB temp files (can symlink or mount folder <datadir>/temp to another disk). Ethereum Mainnet Full node ( see --prune* flags): 400Gb (April 2022).
+This is where you will find information about how to manage a Erigon node and understand how it functions.
 
-Goerli Full node (see --prune* flags): 189GB on Beta, 114GB on Alpha (April 2022).
+For example, the pages here will help you to understand the underlying architecture of your Erigon node, how to start it in different configurations using command line options, how to sync the blockchain and how to manage accounts. There is a page on security practices that will help you to keep your Erigon node safe from adversaries.
 
-Gnosis Chain Archive: 370GB (January 2023).
+Note also that there is a page explaining common log messages that are often queried on the Erigon Discord and GitHub - this will help users to interpret the messages displayed to the console and know what actions to take.
 
-BSC Archive: 7TB. BSC Full: 1TB.
+## Node architecture
 
-Polygon Mainnet Archive: 5TB. Polygon Mumbai Archive: 1TB.
+## Command-line options
 
-SSD or NVMe. Do not recommend HDD - on HDD Erigon will always stay N blocks behind chain tip, but not fall behind. Bear in mind that SSD performance deteriorates when close to capacity.
+## Security
 
-RAM: >=16GB, 64-bit architecture.
+## Sync-modes
 
-Golang version >= 1.18; GCC 10+ or Clang; On Linux: kernel > v4
+## Account management
 
-🔬 more details on disk storage [here](https://erigon.substack.com/p/disk-footprint-changes-in-new-erigon?s=r) and [here](https://ledgerwatch.github.io/turbo_geth_release.html#Disk-space).
+## Databases
+
+## Backup & restore
+
+## Logs
+
+## Connecting to peers
+
+## Pruning
+
+## Private networks
+
+## Config files
+
+Light client
+
+Mining
