@@ -43,17 +43,7 @@ Run Erigon on a remote server allowing connection from any host, enabling http a
 
 ### RPC as separate process
 
-The RPC daemon can use local DB (with running Erigon or on snapshot of a database) or remote DB (run on another server). 
-
-**For remote DB**
-
-This works regardless of whether RPC daemon is on the same computer with Erigon, or on a different one. They use TPC socket connection to pass data between them. To use this mode, run Erigon in one terminal window.
-
-```bash
-./build/bin/erigon --private.api.addr=localhost:9090 --http=false
-
-./build/bin/rpcdaemon --private.api.addr=localhost:9090 --http.api=eth,erigon,web3,net,debug,trace,txpool
-```
+The RPC daemon can use the local database (with running Erigon or on snapshot of a database) or remote database (running on another server). 
 
 **For local DB**
 
@@ -64,6 +54,30 @@ When running RPCDaemon on the same machine with Erigon add ``--datadir`` option 
 
 ./build/bin/rpcdaemon --private.api.addr=localhost:9090 --http.vhosts="*" --http.addr="0.0.0.0" --http.api=eth,erigon,web3,net,debug,trace,txpool —-datadir=/home/admin/.local/share/erigon
 ```
+
+**For remote DB**
+
+This works regardless of whether RPC daemon is on the same computer with Erigon, or on a different one. They use TPC socket connection to pass data between them. To use this mode, run Erigon in one terminal window.
+
+```bash
+./build/bin/erigon --private.api.addr=localhost:9090 --http=false
+
+./build/bin/rpcdaemon --private.api.addr=localhost:9090 --http.api=eth,erigon,web3,net,debug,trace,txpool
+```
+If the Erigon process is one machine and RPCDaemon is on another machine, use ``private.api.addr`` option for Erigon and open port 9090
+
+```bash
+./build/bin/erigon --private.api.addr=0.0.0.0:9090 --http=false --http.vhosts="*" --http.addr="0.0.0.0"
+```
+
+On the other machine
+
+```bash
+./build/bin/rpcdaemon --http.vhosts="*" --private.api.addr=123.123.123.123:9090 --http.api=eth,erigon,web3,net,debug,trace,txpool
+```
+
+
+
 
 
 
