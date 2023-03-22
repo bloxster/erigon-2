@@ -61,14 +61,14 @@ Using provided wmake.ps1 PowerShell script. Usage syntax is the same as make com
 - Git for Windows must be installed. If you're cloning this repository is very likely you already have it
 - GO Programming Language must be installed. Minimum required version is 1.18
 - GNU CC Compiler at least version 10 (is highly suggested that you install chocolatey package manager - see following point)
-- If you need to build MDBX tools (i.e. .\wmake.ps1 db-tools) then Chocolatey package manager for Windows must be installed. By Chocolatey you need to install the following components : cmake, make, mingw by choco install cmake make mingw. Make sure Windows System "Path" variable has: C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin
+- If you need to build MDBX tools (i.e. .\wmake.ps1 db-tools) then Chocolatey package manager for Windows must be installed. By Chocolatey you need to install the following components : cmake, make, mingw by choco install cmake make mingw. Make sure Windows System "Path" variable has: ``C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin``
 
 .. Note:
   Important note about Anti-Viruses During MinGW's compiler detection phase some temporary executables are generated to test compiler capabilities. It's been reported some anti-virus programs detect those files as possibly infected by Win64/Kryptic.CIS trojan horse (or a variant of it). Although those are false positives we have no control over 100+ vendors of security products for Windows and their respective detection algorithms and we understand this might make your experience with Windows builds uncomfortable. To workaround the issue you might either set exclusions for your antivirus specifically for build\bin\mdbx\CMakeFiles sub-folder of the cloned repo or you can run erigon using the following other two options
 
 ** Use Docker **
 
-See (docker-compose.yml)[https://github.com/ledgerwatch/erigon/blob/devel/docker-compose.yml]
+See [docker-compose.yml](https://github.com/ledgerwatch/erigon/blob/devel/docker-compose.yml)
 
 ** Use WSL (Windows Subsystem for Linux) **
 
