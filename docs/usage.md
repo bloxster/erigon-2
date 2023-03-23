@@ -7,7 +7,7 @@ Don't start services as separated processes unless you have clear reason for it:
 
 How to start Erigon's services as separated processes, see in docker-compose.yml.
 
-## One-in-all Client
+## All-in-one Client
 
 To use Erigon as a full single service launch:
 
