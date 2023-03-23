@@ -54,7 +54,7 @@ Windows users may run erigon in 3 possible ways:
 - Use Docker
 - Use WSL (Windows Subsystem for Linux)
 
-** Build executable binaries natively for Windows **
+### Build executable binaries natively for Windows
   
 Using provided wmake.ps1 PowerShell script. Usage syntax is the same as make command so you have to run .\wmake.ps1 [-target] <targetname>. Example: .\wmake.ps1 erigon builds erigon executable. All binaries are placed in .\build\bin\ subfolder. There are some requirements for a successful native build on windows :
 
@@ -63,17 +63,16 @@ Using provided wmake.ps1 PowerShell script. Usage syntax is the same as make com
 - GNU CC Compiler at least version 10 (is highly suggested that you install chocolatey package manager - see following point)
 - If you need to build MDBX tools (i.e. .\wmake.ps1 db-tools) then Chocolatey package manager for Windows must be installed. By Chocolatey you need to install the following components : cmake, make, mingw by choco install cmake make mingw. Make sure Windows System "Path" variable has: ``C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin``
 
-.. Note:
+.. note::
   Important note about Anti-Viruses During MinGW's compiler detection phase some temporary executables are generated to test compiler capabilities. It's been reported some anti-virus programs detect those files as possibly infected by Win64/Kryptic.CIS trojan horse (or a variant of it). Although those are false positives we have no control over 100+ vendors of security products for Windows and their respective detection algorithms and we understand this might make your experience with Windows builds uncomfortable. To workaround the issue you might either set exclusions for your antivirus specifically for build\bin\mdbx\CMakeFiles sub-folder of the cloned repo or you can run erigon using the following other two options
 
-** Use Docker **
+### Use Docker
 
 See [docker-compose.yml](https://github.com/ledgerwatch/erigon/blob/devel/docker-compose.yml)
 
-** Use WSL (Windows Subsystem for Linux) **
+### Use WSL (Windows Subsystem for Linux)
 
-.. note:
-
-  WSL Version 2 supported
+.. note::
+  WSL Version 2 is the only version supported
 
 Under this option you can build Erigon just as you would on a regular Linux distribution. You can point your data also to any of the mounted Windows partitions ( eg. ``/mnt/c/[...]``, ``/mnt/d/[...]`` etc) but in such case be advised performance is impacted: this is due to the fact those mount points use ``DrvFS`` which is a network file system and, additionally, MDBX locks the db for exclusive access which implies only one process at a time can access data. This has consequences on the running of ``rpcdaemon`` which has to be configured as Remote DB even if it is executed on the very same computer. If instead your data is hosted on the native Linux filesystem non limitations apply. Please also note the default WSL2 environment has its own IP address which does not match the one of the network interface of Windows host: take this into account when configuring NAT for port 30303 on your router.
