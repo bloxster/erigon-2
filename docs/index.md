@@ -31,7 +31,4 @@ developers
 monitoring
 tools
 faq
-use
-contribute/index
-reference/example
 ```
