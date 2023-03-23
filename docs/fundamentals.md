@@ -1,6 +1,6 @@
 # Erigon Fundamentals
 
-## Introduction
+## Introduction
 
 This section includes documentation for foundational topics in Erigon. The pages here will help you to understand how Erigon works from a user perspective and under the hood.
 
@@ -10,7 +10,7 @@ For example, the pages here will help you to understand the underlying architect
 
 Note also that there is a page explaining common log messages that are often queried on the Erigon Discord and GitHub - this will help users to interpret the messages displayed to the console and know what actions to take.
 
-## Node architecture
+## Node architecture
 
 ## Command-line options
 Erigon is primarily controlled using the command line, started using the ``./build/bin/erigon`` command and stopped by pressing ``ctrl-c``.
