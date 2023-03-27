@@ -9,9 +9,15 @@ Erigon is an implementation of Ethereum (execution client), on the efficiency fr
 
 [Github](https://github.com/ledgerwatch/erigon)
 
-[Substack](https://erigon.substack.com)
+[Blog](https://erigon.substack.com) on Substack
 
 [Twitter](https://twitter.com/ErigonEth)
+
+[Telegram](https://t.me/monoblunt)
+
+Erigon Discord Server
+
+The main discussions are happening on our Discord server. To get an invite, send an email to tg [at] torquem.ch with your name, occupation, a brief explanation of why you want to join the Discord, and how you heard about Erigon.
 
 ## Index
 
