@@ -2,8 +2,7 @@
 
 Erigon is an implementation of Ethereum (execution client), on the efficiency frontier. Archive Node by default.
 
-.. note::
-   This project is under active development.
+:::{note} This project is under active development.
 
 ## Project Links
 
