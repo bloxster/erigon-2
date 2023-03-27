@@ -9,7 +9,7 @@ Erigon is an implementation of Ethereum (execution client), on the efficiency fr
 
 [Github](https://github.com/ledgerwatch/erigon)
 
-[Blog](https://erigon.substack.com) on Substack
+Blog on [Substack](https://erigon.substack.com)
 
 [Twitter](https://twitter.com/ErigonEth)
 
